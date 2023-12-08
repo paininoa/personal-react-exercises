@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import SearchFilter from "./SearchFilter/SearchFilter";
+import SimpleCounter from "./SimpleCounter/SimpleCounter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,8 @@ function App() {
       </h1>
 
       <SearchFilter />
+
+      <SimpleCounter />
     </>
   );
 }
