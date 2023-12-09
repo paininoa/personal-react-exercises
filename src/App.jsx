@@ -4,6 +4,7 @@ import SearchFilter from "./SearchFilter/SearchFilter";
 import SimpleCounter from "./SimpleCounter/SimpleCounter";
 import DisplayList from "./DisplayList/DisplayList";
 import Accordion from "./Accordion/Accordion";
+import ImageSlider from "./ImageSlider/ImageSlider";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,6 +49,29 @@ function App() {
         title={"Accordion 3"}
         content={"Lorem ipsum dolor sit amet consectetur adipisicing."}
       />
+
+      <div className="explanation">
+        <h2>NOT WORKING</h2>
+        <h2>5. Image Slider using React JS</h2>
+        <p>
+          React exercise to create an image slide, where users can view multiple
+          images with next/previous buttons. Additionally, there is also an
+          option to select an image from any index of the list through a
+          click-on option circle.
+          <br /> <br /> The following are the steps to create an image slider in
+          React JS:
+        </p>
+        <ol>
+          <li>Declare array of objects with id and image url.</li>
+          <li>
+            For pre/next functionality, we decrement/increment count of the
+            index of active image.
+          </li>
+          <li>Update active image index with clicked option.</li>
+        </ol>
+      </div>
+
+      <ImageSlider />
     </>
   );
 }

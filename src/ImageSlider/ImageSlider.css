@@ -1,0 +1,26 @@
+.overflowHideen {
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  display: flex;
+  direction: row;
+  width: 400%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+}
+.slider img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.sliderNav {
+  display: flex;
+  justify-content: center;
+}

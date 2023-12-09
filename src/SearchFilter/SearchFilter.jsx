@@ -23,6 +23,7 @@ export default () => {
   return (
     <>
       <div className="explanation">
+        <h2>NOT WORKING</h2>
         <h2>1. Build Search filter in React</h2>
         <p>
           React code to build a simple search filter functionality to display a
