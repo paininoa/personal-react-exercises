@@ -36,7 +36,11 @@ export default () => {
         {images.map((imageObj, imageIndex) => {
           return (
             <figure className="slide" key={`image${imageIndex}`}>
-              <img src={imageObj.url} alt={imageObj.title} />
+              <img
+                className="sliderImg"
+                src={imageObj.url}
+                alt={imageObj.title}
+              />
             </figure>
           );
         })}

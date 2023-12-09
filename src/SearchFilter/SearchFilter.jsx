@@ -12,18 +12,18 @@ export default () => {
     "lemon",
   ];
 
-  const [filteredList, setFilteredList] = useState(fruits);
+  const [list, setList] = useState(fruits);
+
   const handleSearch = (e) => {
-    if (e.target.value === "") {
-      setFilteredList(list);
-      return;
-    }
+    const filteredList = fruits.filter((item) =>
+      item.startsWith(e.target.value)
+    );
+    setList(filteredList);
   };
 
   return (
     <>
       <div className="explanation">
-        <h2>NOT WORKING</h2>
         <h2>1. Build Search filter in React</h2>
         <p>
           React code to build a simple search filter functionality to display a
@@ -42,13 +42,18 @@ export default () => {
       </div>
 
       <ul>
-        {fruits.map((e, i) => (
+        {list.map((e, i) => (
           <li key={i}>{e}</li>
         ))}
       </ul>
       <label>
         Search:
-        <input type="text" onChange={handleSearch} />
+        <input
+          type="text"
+          onChange={(e) => {
+            handleSearch(e);
+          }}
+        />
       </label>
     </>
   );
