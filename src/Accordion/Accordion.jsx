@@ -13,7 +13,7 @@ export default ({ title, content }) => {
         <div className="accordionTitleWrapper">
           <h4>{title}</h4>
         </div>
-        <div className={isOpen ? "" : "close"}>
+        <div className={isOpen ? "open" : "close"}>
           <p>{content}</p>
         </div>
       </div>

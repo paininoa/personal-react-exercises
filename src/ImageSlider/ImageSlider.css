@@ -9,6 +9,7 @@
   height: 60vh;
   overflow: hidden;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .slide {
@@ -24,4 +25,5 @@
 .sliderNav {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }

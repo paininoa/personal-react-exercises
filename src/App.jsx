@@ -5,6 +5,7 @@ import SimpleCounter from "./SimpleCounter/SimpleCounter";
 import DisplayList from "./DisplayList/DisplayList";
 import Accordion from "./Accordion/Accordion";
 import ImageSlider from "./ImageSlider/ImageSlider";
+import Checklist from "./Checklist/Checklist";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,7 +52,7 @@ function App() {
       />
 
       <div className="explanation">
-        <h2>NOT WORKING</h2>
+        <h2 className="red">NOT WORKING</h2>
         <h2>5. Image Slider using React JS</h2>
         <p>
           React exercise to create an image slide, where users can view multiple
@@ -72,6 +73,31 @@ function App() {
       </div>
 
       <ImageSlider />
+
+      <div className="explanation">
+        <h2 className="red">NOT WORKING</h2>
+        <h2>6. Create a Checklist in React</h2>
+        <p>
+          React code to display a checklist with multiple options that can
+          select and the selected options are dynamically displayed on the
+          screen. React State is used to keep track of checked options and
+          onChange() Event handler is triggered to alter the state whenever an
+          option is checked or unchecked.
+          <br /> <br /> The following are the steps to create a Checklist in
+          React JS:
+        </p>
+        <ol>
+          <li>Create React state to track checkbox value.</li>
+          <li>
+            Function to update checkbox value based on event.target.checked
+          </li>
+          <li>
+            Add checkbox input element to JSX code with onChange function.
+          </li>
+        </ol>
+      </div>
+
+      <Checklist />
     </>
   );
 }
