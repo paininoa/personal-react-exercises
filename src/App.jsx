@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import SearchFilter from "./SearchFilter/SearchFilter";
 import SimpleCounter from "./SimpleCounter/SimpleCounter";
@@ -7,6 +7,7 @@ import Accordion from "./Accordion/Accordion";
 import ImageSlider from "./ImageSlider/ImageSlider";
 import Checklist from "./Checklist/Checklist";
 import Login from "./Login/Login";
+import PokemonApi from "./PokemonApi/PokemonApi";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -101,6 +102,7 @@ function App() {
       <Checklist />
 
       <div className="explanation">
+        <h2 className="red">NOT WORKING</h2>
         <h2>7. Simple Login form in React</h2>
         <p>
           React code for simple login form where the user login by entering
@@ -126,6 +128,29 @@ function App() {
       </div>
 
       <Login />
+
+      <div className="explanation">
+        <h2>8. Print data from REST API</h2>
+        <p>
+          React code to collect data from rest API using fetch() in JavaScript
+          combined with useEffect() to load the content on page render.
+          <br /> <br /> The following are the steps to print data from REST API
+          in React JS:
+        </p>
+        <ol>
+          <li>Create React state to store the API response.</li>
+          <li>
+            Declare State to Component JSX code to display the API response.
+          </li>
+          <li>JS function where API call is through axios.get() or fetch().</li>
+          <li>
+            Add callback function to update the React state with API response.
+          </li>
+          <li>Add HTML button with JS function with onChange attribute.</li>
+        </ol>
+      </div>
+
+      <PokemonApi />
     </>
   );
 }
