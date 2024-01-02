@@ -8,6 +8,14 @@ import ImageSlider from "./ImageSlider/ImageSlider";
 import Checklist from "./Checklist/Checklist";
 import Login from "./Login/Login";
 import PokemonApi from "./PokemonApi/PokemonApi";
+import SearchFilter2 from "./SearchFilter/SearchFilter2";
+import SimpleCounter2 from "./SimpleCounter/SimpleCounter2";
+import Displaylist2 from "./DisplayList/Displaylist2";
+import Accordion2 from "./Accordion/Accordion2";
+import ImageSlider2 from "./ImageSlider/ImageSlider2";
+import Checklist2 from "./Checklist/Checklist2";
+import Login2 from "./Login/Login2";
+import PokemonAPI2 from "./PokemonApi/PokemonAPI2";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,10 +28,13 @@ function App() {
       </h1>
 
       <SearchFilter />
+      <SearchFilter2 />
 
       <SimpleCounter />
+      <SimpleCounter2 />
 
       <DisplayList />
+      <Displaylist2 />
 
       <div className="explanation">
         <h2>4. Build Accordion in React</h2>
@@ -53,8 +64,11 @@ function App() {
         content={"Lorem ipsum dolor sit amet consectetur adipisicing."}
       />
 
+      <Accordion2 />
+
       <div className="explanation">
-        <h2 className="red">NOT WORKING</h2>
+        <h2 className="red">FIRST NOT WORKING</h2>
+        <h2 className="green">SECOND WORKING!!</h2>
         <h2>5. Image Slider using React JS</h2>
         <p>
           React exercise to create an image slide, where users can view multiple
@@ -75,9 +89,11 @@ function App() {
       </div>
 
       <ImageSlider />
+      <ImageSlider2 />
 
       <div className="explanation">
-        <h2 className="red">NOT WORKING</h2>
+        <h2 className="red">FIRST NOT WORKING</h2>
+        <h2 className="green">SECOND WORKING!!</h2>
         <h2>6. Create a Checklist in React</h2>
         <p>
           React code to display a checklist with multiple options that can
@@ -100,9 +116,12 @@ function App() {
       </div>
 
       <Checklist />
+      <Checklist2 />
 
       <div className="explanation">
-        <h2 className="red">NOT WORKING</h2>
+        <h2 className="red">FIRST NOT WORKING</h2>
+        <h2 className="green">SECOND WORKING!!</h2>
+
         <h2>7. Simple Login form in React</h2>
         <p>
           React code for simple login form where the user login by entering
@@ -128,6 +147,7 @@ function App() {
       </div>
 
       <Login />
+      <Login2 />
 
       <div className="explanation">
         <h2>8. Print data from REST API</h2>
@@ -151,6 +171,7 @@ function App() {
       </div>
 
       <PokemonApi />
+      <PokemonAPI2 />
     </>
   );
 }
